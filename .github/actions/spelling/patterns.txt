@@ -1,0 +1,13 @@
+# italian (?) comments
+  # come cavolo .*
+  # che li .*
+  # TODO da valutare .*
+SECRET_KEY = '[^']+'
+#
+--recv-key [A-F0-9]+
+# hex digits including css/html color classes:
+(?:[\\0][xX]|[uU]\+|#)[0-9a-fA-FgGrR]{2,}[uU]?[lL]{0,2}\b
+# integrity
+integrity="sha256-[^"]{44}"
+# ignore long runs of a single character:
+\b([A-Za-z])\1{3,}\b
